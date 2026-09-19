@@ -4,12 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPLUNK X Dashboard</title>
-    <link rel="stylesheet" href="css/06bzxzryt-_r5_4.css">
-    <link rel="stylesheet" href="css/0n-ozrv_~v-zu_4.css">
+    <style>
+        /* Nhúng trực tiếp CSS để loại bỏ hoàn toàn lỗi mất giao diện */
+        *, ::before, ::after { box-sizing: border-box; border-width: 0; border-style: solid; border-color: #e5e7eb; }
+        html { line-height: 1.5; -webkit-text-size-adjust: 100%; font-family: ui-sans-serif, system-ui, sans-serif; }
+        body { margin: 0; line-height: inherit; background-color: #000000; color: #ffffff; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 1.5rem; padding-bottom: 5rem; }
+        .w-full { width: 100%; }
+        .max-w-2xl { max-width: 42rem; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .space-y-6 > :not([hidden]) ~ :not([hidden]) { margin-top: 1.5rem; }
+        .space-y-4 > :not([hidden]) ~ :not([hidden]) { margin-top: 1rem; }
+        .inline-flex { display: inline-flex; }
+        .items-center { align-items: center; }
+        .justify-between { justify-content: space-between; }
+        .justify-center { justify-content: center; }
+        .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+        .text-xs { font-size: 0.75rem; line-height: 1rem; }
+        .font-medium { font-weight: 500; font-weight: 700; }
+        .font-bold { font-weight: 700; }
+        .font-extrabold { font-weight: 800; }
+        .text-gray-400 { color: #9ca3af; }
+        .text-gray-300 { color: #d1d5db; }
+        .text-gray-500 { color: #6b7280; }
+        .text-black { color: #000000; }
+        .gap-2 { gap: 0.5rem; }
+        .gap-3 { gap: 0.75rem; }
+        .bg-\[\#121215\] { background-color: #121215; }
+        .bg-\[\#1e1e24\] { background-color: #1e1e24; }
+        .bg-\[\#00d9ff\] { background-color: #00d9ff; }
+        .bg-\[\#05df72\] { background-color: #05df72; }
+        .bg-\[\#032e15\] { background-color: #032e15; }
+        .border { border-width: 1px; }
+        .border-white\/5 { border-color: rgb(255 255 255 / 0.05); }
+        .border-\[\#2d2d34\] { border-color: #2d2d34; }
+        .rounded-2xl { border-radius: 1rem; }
+        .rounded-xl { border-radius: 0.75rem; }
+        .rounded-full { border-radius: 9999px; }
+        .p-6 { padding: 1.5rem; }
+        .px-4 { padding-left: 1rem; padding-right: 1rem; }
+        .py-3\.5 { padding-top: 0.875rem; padding-bottom: 0.875rem; }
+        .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+        .px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+        .py-1\.5 { padding-top: 0.375rem; padding-bottom: 0.375rem; }
+        .mt-2 { margin-top: 0.5rem; }
+        .mt-6 { margin-top: 1.5rem; margin-top: 2rem; }
+        .mt-8 { margin-top: 2rem; }
+        .mt-0\.5 { margin-top: 0.125rem; }
+        .shadow-2xl { box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); }
+        .shadow-lg { box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); }
+        .cursor-pointer { cursor: pointer; }
+        .uppercase { text-transform: uppercase; }
+        .tracking-wider { letter-spacing: 0.05em; }
+        .flex { display: flex; }
+        .flex-col { flex-direction: column; }
+        .text-center { text-align: center; }
+        .text-\[\#05df72\] { color: #05df72; }
+        .border-emerald-500\/20 { border-color: rgb(16 185 129 / 0.2); }
+    </style>
 </head>
-<body class="bg-black text-white min-h-screen flex flex-col items-center justify-between p-6 pb-20">
+<body>
     <div class="w-full max-w-2xl mx-auto space-y-6">
-        <a href="#" class="inline-flex items-center text-sm font-medium text-gray-400 hover:text-white gap-2">
+        <a href="#" class="inline-flex items-center text-sm font-medium text-gray-400 gap-2">
             &larr; Back to Bypasser
         </a>
 
@@ -39,7 +94,7 @@
 
         <div class="bg-[#121215] border border-white/5 rounded-2xl p-6 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <div class="w-3 h-3 rounded-full bg-[#05df72] animate-pulse"></div>
+                <div class="w-3 h-3 rounded-full bg-[#05df72]"></div>
                 <div>
                     <div class="font-bold text-sm">SPLUNK X Server Status</div>
                     <div class="text-xs text-gray-400 mt-0.5">301 online • 17,344 offline • 17,645 total</div>
